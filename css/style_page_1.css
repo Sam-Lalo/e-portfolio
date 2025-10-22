@@ -141,6 +141,7 @@ img[src="../image/photo_sam.png"] {
 .milieu{
     grid-column: 3;
     color : #f9f8ff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .icone_linkdin{
@@ -151,4 +152,5 @@ img[src="../image/photo_sam.png"] {
 .icone_mail{
     grid-column: 5;
     color : #f9f8ff;
+
 }
