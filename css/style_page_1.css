@@ -1,13 +1,57 @@
 /* nav + header */
 
 
+.bouttonFr {
+    grid-column: 1;
+    max-height: 20px;
+    position: relative;
+    text-align: center;
+    max-width: 40px;
+    left:10px;
+    background: linear-gradient(#8e86b5, #acaeed);
+    border-radius: 20px;
+    color: rgb(244, 253, 242);
+}
+.bouttonFr:hover, .bouttonEn:hover{
+    background: linear-gradient(#696484, #8788ba);
+}
+.bouttonEn {
+    grid-column: 2;
+    max-width: 40px;
+    max-height: 20px;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(#8e86b5, #acaeed);
+    border-radius: 20px;
+    color: rgb(244, 253, 242);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+img {
+    z-index: 1;
+}
 
 .titre_du_site {
+    grid-column: 3;
+    grid-row:1;
     text-align: center;
     font-size: 25px;
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+header .titre_du_site {
+    background-color: rgb(244, 253, 242);
+    padding : 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+    margin-top: 20px;
 }
 
 body {
@@ -16,11 +60,36 @@ body {
 
 .Conteneur_Nav {
     display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr 1fr 1.5fr 1fr 1fr 1fr;
-    gap: 25px;   
+    grid-template-columns: 0.25fr 0.25fr 0.5fr 1fr 1fr 1.5fr 1fr 1fr;
+    gap: 5px;   
     background-color: rgb(33, 34, 58);
     border-radius: 20px;
     padding-top: 10px;
+    
+}
+
+.Welcome{
+    grid-column: 3;
+}
+
+.Engineering_course{
+    grid-column: 4;
+}
+
+.International_Mobility{
+    grid-column: 5;
+}
+
+.Sustainability_and_Civic_Engagement{
+    grid-column: 6;
+}
+
+.Sport_and_other_activities{
+    grid-column: 7;
+}
+
+.Career_Developement{
+    grid-column: 8;
 }
 
 a:hover {
@@ -55,6 +124,11 @@ img[src="../image/photo_sam.png"] {
     grid-row-end: 4;
 }
 
+.un img {
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(90, 92, 156, 0.5);
+}
+
 .deux{ 
     grid-column: 2;
     grid-row: 1;
@@ -67,7 +141,8 @@ img[src="../image/photo_sam.png"] {
 
 .trois{
     grid-column: 2;
-    grid-row: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color:#f9f8ff;
@@ -95,13 +170,14 @@ img[src="../image/photo_sam.png"] {
 .Conteneur_body{
     display: grid;
     margin : 50px;
-    padding: 30px;
+    padding: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr ;
     gap: 60px;   
     background-color: rgb(33, 34, 58);
     border-radius: 20px;
     align-items: center;
+    box-shadow: 5px 5px 5px rgb(90, 92, 156, 0.5);
     
 }
 
@@ -115,7 +191,7 @@ img[src="../image/photo_sam.png"] {
 
 .conteneur_footer{
     display: grid;
-    grid-template-columns: 1fr 10fr 0.6fr 0.3fr 0.3fr ;
+    grid-template-columns: 1fr 10fr 0.8fr 0.3fr 0.3fr ;
     margin : 5px;
     gap: 5px;
     background-color: rgb(33, 34, 58);
