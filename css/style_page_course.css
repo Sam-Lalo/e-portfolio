@@ -1,0 +1,69 @@
+.cont_course1{
+    display:grid;
+    grid-template-columns: 1fr 0.75fr 0.75fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+}
+
+.messageInfo{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.25em;
+    margin-top: 30px;
+    background-color: rgb(56, 58, 92);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 10px 10px 10px rgb(90, 92, 156, 0.5);
+    color: #f9f8ff;
+
+}
+
+.cont_course2{
+    grid-column: 2;
+    grid-row: 2;
+    display:grid;
+    grid-template-columns: 0.40fr 1.25fr;
+    grid-template-rows: 0.25fr 2fr;
+    gap: 5px;   
+    background-color: rgb(33, 34, 58);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgb(90, 92, 156, 0.5);
+
+}
+
+.cont_course3{
+    grid-column: 3;
+    grid-row: 3;
+    display:grid;
+    grid-template-columns: 0.40fr 1.25fr;
+    grid-template-rows: 0.25fr 2fr;
+    gap: 5px;   
+    background-color: rgb(33, 34, 58);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgb(90, 92, 156, 0.5);
+
+}
+
+.semestre{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    grid-row: 1;
+    grid-column: 1;
+    color: #f9f8ff;
+    padding: 10px;
+    font-size: 1.25em;
+}
+
+.matiere{
+    font-family: 'Montserrat', sans-serif;
+    grid-row: 2;
+    grid-column: 2;
+    color: #f9f8ff;
+}
+
+li{
+    padding: 5px;
+}
